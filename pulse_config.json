@@ -1,7 +1,7 @@
 {
   "configVersion": 2,
-  "configUpdatedAt": "2026-10-07T16:46:53.963Z",
-  "designUpdatedAt": "2026-10-07T16:46:53.963Z",
+  "configUpdatedAt": "2026-10-07T16:58:07.315Z",
+  "designUpdatedAt": "2026-10-07T16:58:07.315Z",
   "title": "Olist Executive Review",
   "subtitle": "Sales performance, customer markets and fulfilment experience.",
   "theme": "custom",
@@ -102,7 +102,7 @@
           "layout": {
             "x": 0,
             "y": 0,
-            "w": 4,
+            "w": 6,
             "h": 3
           },
           "filters": [],
@@ -128,45 +128,13 @@
           "slicerMultiSelect": true
         },
         {
-          "id": "sales_status",
-          "type": "slicer",
-          "title": "Order status",
-          "layout": {
-            "x": 4,
-            "y": 0,
-            "w": 4,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "order_status",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
-        {
           "id": "sales_state",
           "type": "slicer",
           "title": "Customer state",
           "layout": {
-            "x": 8,
+            "x": 6,
             "y": 0,
-            "w": 4,
+            "w": 6,
             "h": 3
           },
           "filters": [],
@@ -419,7 +387,7 @@
           "layout": {
             "x": 0,
             "y": 0,
-            "w": 4,
+            "w": 6,
             "h": 3
           },
           "filters": [],
@@ -449,9 +417,9 @@
           "type": "slicer",
           "title": "Customer state",
           "layout": {
-            "x": 4,
+            "x": 6,
             "y": 0,
-            "w": 4,
+            "w": 6,
             "h": 3
           },
           "filters": [],
@@ -473,38 +441,6 @@
           "sortBy": "label",
           "sortDirection": "asc",
           "dimension": "customer_state",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
-        {
-          "id": "markets_payment",
-          "type": "slicer",
-          "title": "Primary payment type",
-          "layout": {
-            "x": 8,
-            "y": 0,
-            "w": 4,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "primary_payment_type",
           "slicerStyle": "dropdown",
           "slicerMultiSelect": true
         },
@@ -702,11 +638,8 @@
           "xAxisTitle": "",
           "yAxisTitle": "",
           "currency": "BRL",
-          "drilldownEnabled": true,
-          "drilldownFields": [
-            "customer_city"
-          ],
-          "followDashboardDrill": true
+          "drilldownEnabled": false,
+          "drilldownFields": []
         },
         {
           "id": "markets_payment_mix",
@@ -827,7 +760,7 @@
           "layout": {
             "x": 0,
             "y": 0,
-            "w": 4,
+            "w": 6,
             "h": 3
           },
           "filters": [],
@@ -857,9 +790,9 @@
           "type": "slicer",
           "title": "Customer state",
           "layout": {
-            "x": 4,
+            "x": 6,
             "y": 0,
-            "w": 4,
+            "w": 6,
             "h": 3
           },
           "filters": [],
@@ -881,38 +814,6 @@
           "sortBy": "label",
           "sortDirection": "asc",
           "dimension": "customer_state",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
-        {
-          "id": "experience_review",
-          "type": "slicer",
-          "title": "Order review band",
-          "layout": {
-            "x": 8,
-            "y": 0,
-            "w": 4,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "review_band",
           "slicerStyle": "dropdown",
           "slicerMultiSelect": true
         },
