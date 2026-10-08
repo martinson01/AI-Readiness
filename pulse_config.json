@@ -1,8 +1,8 @@
 {
   "configVersion": 2,
-  "configUpdatedAt": "2026-10-07T16:58:07.315Z",
-  "designUpdatedAt": "2026-10-07T16:58:07.315Z",
-  "title": "Olist Executive Review",
+  "configUpdatedAt": "2026-10-08T09:15:50.981Z",
+  "designUpdatedAt": "2026-10-08T09:15:50.981Z",
+  "title": "Olist Executive Review V1",
   "subtitle": "Sales performance, customer markets and fulfilment experience.",
   "theme": "custom",
   "customTheme": {
@@ -34,7 +34,8 @@
       },
       "navigation": {
         "size": 14,
-        "weight": 600
+        "weight": 600,
+        "color": "#FCFBF9"
       },
       "axisTitle": {
         "size": 12
@@ -70,7 +71,8 @@
       "selection": "#FCF4F4",
       "tooltipBackground": "#FCFBF9",
       "tooltipText": "#26262A",
-      "navigationText": "#26262A"
+      "navigationText": "#FCFBF9",
+      "navigationBackground": "#26262A"
     },
     "palette": [
       "#556B7D",
@@ -561,55 +563,14 @@
           "calcLabel": "Freight share"
         },
         {
-          "id": "markets_map",
-          "type": "map",
-          "title": "Customer revenue by state",
-          "layout": {
-            "x": 0,
-            "y": 7,
-            "w": 7,
-            "h": 10
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "currency",
-          "decimalPlaces": 0,
-          "aggregation": "sum",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#C1292E",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "value",
-          "sortDirection": "desc",
-          "mapMode": "geo",
-          "latitudeField": "state_latitude",
-          "longitudeField": "state_longitude",
-          "dimension": "customer_state",
-          "measure": "order_revenue_value",
-          "sizeField": "order_revenue_value",
-          "currency": "BRL",
-          "mapBackground": "offlineLight",
-          "mapMaxPoints": 100,
-          "mapPointSize": 8,
-          "minSymbolSize": 8,
-          "maxSymbolSize": 30
-        },
-        {
           "id": "markets_state_revenue",
           "type": "horizontalBar",
           "title": "States by item revenue",
           "layout": {
-            "x": 7,
+            "x": 0,
             "y": 7,
-            "w": 5,
-            "h": 10
+            "w": 12,
+            "h": 8
           },
           "filters": [],
           "filterBehaviour": "respond",
@@ -647,7 +608,7 @@
           "title": "Primary payment mix",
           "layout": {
             "x": 0,
-            "y": 17,
+            "y": 15,
             "w": 6,
             "h": 8
           },
@@ -684,7 +645,7 @@
           "title": "Average order value by state",
           "layout": {
             "x": 6,
-            "y": 17,
+            "y": 15,
             "w": 6,
             "h": 8
           },
@@ -732,10 +693,10 @@
           "type": "text",
           "title": "",
           "heading": "",
-          "body": "State markers use representative positions from the geolocation reference. Payment mix assigns each order to its primary payment method.",
+          "body": "Payment mix assigns each order to its primary payment method.",
           "layout": {
             "x": 0,
-            "y": 25,
+            "y": 23,
             "w": 12,
             "h": 2
           },
@@ -1012,7 +973,17 @@
             "w": 6,
             "h": 8
           },
-          "filters": [],
+          "filters": [
+            {
+              "id": "experience_on_time_evaluable",
+              "field": "delivery_evaluable_order_count",
+              "fieldType": "number",
+              "operator": "equals",
+              "value": "1",
+              "value2": "",
+              "values": []
+            }
+          ],
           "filterBehaviour": "respond",
           "titleSize": 16,
           "chartPadding": "normal",
