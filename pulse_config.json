@@ -130,7 +130,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "BRL \u00c2\u00b7 freight excluded"
+          "labelOverride": "BRL \u00b7 freight excluded"
         },
         {
           "id": "sales_orders",
@@ -200,7 +200,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "BRL \u00c2\u00b7 orders with items",
+          "labelOverride": "BRL \u00b7 orders with items",
           "calcOperation": "ratio",
           "calcNumeratorSource": "field",
           "calcNumeratorField": "order_revenue_value",
@@ -719,7 +719,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "Order average \u00c2\u00b7 out of 5"
+          "labelOverride": "Order average \u00b7 out of 5"
         },
         {
           "id": "experience_on_time",
@@ -810,7 +810,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "Calendar days \u00c2\u00b7 delivered orders"
+          "labelOverride": "Calendar days \u00b7 delivered orders"
         },
         {
           "id": "experience_monthly_review",
