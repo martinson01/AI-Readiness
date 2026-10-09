@@ -1,13 +1,13 @@
 {
   "configVersion": 2,
-  "configUpdatedAt": "2026-10-08T09:15:50.981Z",
-  "designUpdatedAt": "2026-10-08T09:15:50.981Z",
-  "title": "Olist Executive Review V1",
-  "subtitle": "Sales performance, customer markets and fulfilment experience.",
+  "configUpdatedAt": "2026-10-09T09:38:43.000Z",
+  "designUpdatedAt": "2026-10-09T09:38:43.000Z",
+  "title": "Olist Business Performance",
+  "subtitle": "",
   "theme": "custom",
   "customTheme": {
     "accent": "#C1292E",
-    "background": "#F4F1EC",
+    "background": "#EEF2F5",
     "panel": "#FCFBF9",
     "text": "#26262A"
   },
@@ -57,34 +57,34 @@
       }
     },
     "colors": {
-      "background": "#F4F1EC",
+      "background": "#EEF2F5",
       "panel": "#FCFBF9",
       "text": "#26262A",
       "title": "#26262A",
-      "muted": "#56565B",
-      "border": "#D8D5CF",
-      "grid": "#E6E3DD",
-      "axis": "#8A8A8F",
-      "positive": "#497C68",
+      "muted": "#59616B",
+      "border": "#D4DCE2",
+      "grid": "#E1E6EA",
+      "axis": "#6B7480",
+      "positive": "#007F82",
       "negative": "#C1292E",
       "hover": "#F1EEE8",
       "selection": "#FCF4F4",
       "tooltipBackground": "#FCFBF9",
       "tooltipText": "#26262A",
       "navigationText": "#FCFBF9",
-      "navigationBackground": "#26262A"
+      "navigationBackground": "#172A38"
     },
     "palette": [
-      "#556B7D",
+      "#007F82",
+      "#4169B1",
+      "#BB7B19",
       "#C1292E",
-      "#497C68",
-      "#B17B38",
-      "#7B7186",
-      "#6B8484"
+      "#785CA3",
+      "#5C8C77"
     ]
   },
   "logoDataUri": "",
-  "brandSubtitle": "Executive analytics",
+  "brandSubtitle": "",
   "dashboardBackgroundMode": "theme",
   "filterBarMode": "classic",
   "presentationPolish": true,
@@ -94,80 +94,16 @@
     {
       "id": "sales",
       "name": "Sales performance",
-      "subtitle": "Revenue, order value and the balance of order statuses.",
+      "subtitle": "",
       "filters": [],
       "blocks": [
-        {
-          "id": "sales_year",
-          "type": "slicer",
-          "title": "Purchase year",
-          "layout": {
-            "x": 0,
-            "y": 0,
-            "w": 6,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "purchase_year_label",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
-        {
-          "id": "sales_state",
-          "type": "slicer",
-          "title": "Customer state",
-          "layout": {
-            "x": 6,
-            "y": 0,
-            "w": 6,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "customer_state",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
         {
           "id": "sales_revenue",
           "type": "kpi",
           "title": "Item revenue",
           "layout": {
             "x": 0,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -183,7 +119,7 @@
           "metricMode": "field",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -194,7 +130,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "BRL · freight excluded"
+          "labelOverride": "BRL \u00c2\u00b7 freight excluded"
         },
         {
           "id": "sales_orders",
@@ -202,7 +138,7 @@
           "title": "Orders",
           "layout": {
             "x": 4,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -218,7 +154,7 @@
           "metricMode": "field",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -237,7 +173,7 @@
           "title": "Average order value",
           "layout": {
             "x": 8,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -253,7 +189,7 @@
           "metricMode": "calculated",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -264,7 +200,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "BRL · orders with items",
+          "labelOverride": "BRL \u00c2\u00b7 orders with items",
           "calcOperation": "ratio",
           "calcNumeratorSource": "field",
           "calcNumeratorField": "order_revenue_value",
@@ -280,11 +216,11 @@
         {
           "id": "sales_revenue_trend",
           "type": "line",
-          "title": "Item revenue by purchase month",
+          "title": "Revenue by month",
           "layout": {
             "x": 0,
-            "y": 7,
-            "w": 8,
+            "y": 4,
+            "w": 6,
             "h": 8
           },
           "filters": [],
@@ -298,8 +234,8 @@
           "aggregation": "sum",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#C1292E",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#007F82",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -309,8 +245,8 @@
           "measure": "order_revenue_value",
           "sortField": "purchase_year_month",
           "lineSmooth": false,
-          "lineWidth": 2,
-          "pointSize": 4,
+          "lineWidth": 3,
+          "pointSize": 2,
           "dataZoom": true,
           "xAxisTitle": "Purchase month",
           "showGridLines": true,
@@ -320,41 +256,67 @@
           "labelOverride": "Item revenue"
         },
         {
-          "id": "sales_status_mix",
-          "type": "horizontalBar",
-          "title": "Order status mix",
+          "id": "sales_aov_trend",
+          "type": "line",
+          "title": "Order value by month",
           "layout": {
-            "x": 8,
-            "y": 7,
-            "w": 4,
+            "x": 6,
+            "y": 4,
+            "w": 6,
             "h": 8
           },
-          "filters": [],
+          "filters": [
+            {
+              "id": "sales_aov_trend_items",
+              "field": "orders_with_items_count",
+              "fieldType": "number",
+              "operator": "equals",
+              "value": "1",
+              "value2": "",
+              "values": []
+            }
+          ],
           "filterBehaviour": "respond",
           "titleSize": 16,
           "chartPadding": "normal",
           "tileCornerRadius": 3,
           "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
+          "numberFormat": "currency",
+          "decimalPlaces": 2,
           "aggregation": "sum",
-          "metricMode": "field",
+          "metricMode": "calculated",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": true,
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
+          "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
-          "sortBy": "value",
-          "sortDirection": "desc",
-          "dimension": "order_status",
-          "measure": "order_count",
-          "limitMode": "all",
-          "topN": 10,
-          "barRoundedCorners": false,
-          "barBorderRadius": 0,
-          "xAxisTitle": "",
-          "yAxisTitle": ""
+          "sortBy": "source",
+          "sortDirection": "asc",
+          "dimension": "purchase_year_month",
+          "measure": "",
+          "sortField": "purchase_year_month",
+          "lineSmooth": false,
+          "lineWidth": 3,
+          "pointSize": 2,
+          "dataZoom": true,
+          "xAxisTitle": "Purchase month",
+          "showGridLines": true,
+          "currency": "BRL",
+          "yAxisTitle": "Average order value (BRL)",
+          "labelOverrideMode": "custom",
+          "labelOverride": "Average order value",
+          "calcOperation": "ratio",
+          "calcNumeratorSource": "field",
+          "calcNumeratorField": "order_revenue_value",
+          "calcNumeratorAggregation": "sum",
+          "calcNumeratorFilters": [],
+          "calcDenominatorSource": "field",
+          "calcDenominatorField": "orders_with_items_count",
+          "calcDenominatorAggregation": "sum",
+          "calcDenominatorFilters": [],
+          "calcScale": 1,
+          "calcLabel": "Average order value"
         },
         {
           "id": "sales_definitions",
@@ -364,7 +326,7 @@
           "body": "Item revenue excludes freight. Average order value uses orders with items. Boundary months may be incomplete.",
           "layout": {
             "x": 0,
-            "y": 15,
+            "y": 12,
             "w": 12,
             "h": 2
           },
@@ -373,22 +335,14 @@
           "textColor": "#56565B",
           "titleSize": 14,
           "tileCornerRadius": 3
-        }
-      ]
-    },
-    {
-      "id": "markets",
-      "name": "Markets",
-      "subtitle": "Customer reach, regional demand and payment mix.",
-      "filters": [],
-      "blocks": [
+        },
         {
-          "id": "markets_year",
+          "id": "sales_year",
           "type": "slicer",
           "title": "Purchase year",
           "layout": {
             "x": 0,
-            "y": 0,
+            "y": 14,
             "w": 6,
             "h": 3
           },
@@ -403,8 +357,8 @@
           "aggregation": "count",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -415,12 +369,12 @@
           "slicerMultiSelect": true
         },
         {
-          "id": "markets_state",
+          "id": "sales_state",
           "type": "slicer",
           "title": "Customer state",
           "layout": {
             "x": 6,
-            "y": 0,
+            "y": 14,
             "w": 6,
             "h": 3
           },
@@ -435,8 +389,8 @@
           "aggregation": "count",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -445,14 +399,22 @@
           "dimension": "customer_state",
           "slicerStyle": "dropdown",
           "slicerMultiSelect": true
-        },
+        }
+      ]
+    },
+    {
+      "id": "markets",
+      "name": "Markets",
+      "subtitle": "",
+      "filters": [],
+      "blocks": [
         {
           "id": "markets_customers",
           "type": "kpi",
           "title": "Customers",
           "layout": {
             "x": 0,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -468,7 +430,7 @@
           "metricMode": "field",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -487,7 +449,7 @@
           "title": "States represented",
           "layout": {
             "x": 4,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -503,7 +465,7 @@
           "metricMode": "field",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -522,7 +484,7 @@
           "title": "Freight share",
           "layout": {
             "x": 8,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -538,7 +500,7 @@
           "metricMode": "calculated",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -565,10 +527,10 @@
         {
           "id": "markets_state_revenue",
           "type": "horizontalBar",
-          "title": "States by item revenue",
+          "title": "Revenue by state",
           "layout": {
             "x": 0,
-            "y": 7,
+            "y": 4,
             "w": 12,
             "h": 8
           },
@@ -583,8 +545,8 @@
           "aggregation": "sum",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#007F82",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -605,10 +567,10 @@
         {
           "id": "markets_payment_mix",
           "type": "horizontalBar",
-          "title": "Primary payment mix",
+          "title": "Payment methods",
           "layout": {
             "x": 0,
-            "y": 15,
+            "y": 12,
             "w": 6,
             "h": 8
           },
@@ -623,8 +585,8 @@
           "aggregation": "sum",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
           "showLabels": true,
           "showLegend": false,
           "axisScale": "startZero",
@@ -645,7 +607,7 @@
           "title": "Average order value by state",
           "layout": {
             "x": 6,
-            "y": 15,
+            "y": 12,
             "w": 6,
             "h": 8
           },
@@ -660,8 +622,8 @@
           "aggregation": "sum",
           "metricMode": "calculated",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
           "showLabels": true,
           "showLegend": false,
           "axisScale": "startZero",
@@ -696,7 +658,7 @@
           "body": "Payment mix assigns each order to its primary payment method.",
           "layout": {
             "x": 0,
-            "y": 23,
+            "y": 20,
             "w": 12,
             "h": 2
           },
@@ -711,80 +673,16 @@
     {
       "id": "experience",
       "name": "Customer experience",
-      "subtitle": "Delivery reliability, review scores and fulfilment time.",
+      "subtitle": "",
       "filters": [],
       "blocks": [
-        {
-          "id": "experience_year",
-          "type": "slicer",
-          "title": "Purchase year",
-          "layout": {
-            "x": 0,
-            "y": 0,
-            "w": 6,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "purchase_year_label",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
-        {
-          "id": "experience_state",
-          "type": "slicer",
-          "title": "Customer state",
-          "layout": {
-            "x": 6,
-            "y": 0,
-            "w": 6,
-            "h": 3
-          },
-          "filters": [],
-          "filterBehaviour": "respond",
-          "titleSize": 16,
-          "chartPadding": "normal",
-          "tileCornerRadius": 3,
-          "animation": false,
-          "numberFormat": "whole",
-          "decimalPlaces": 0,
-          "aggregation": "count",
-          "metricMode": "field",
-          "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
-          "showLabels": false,
-          "showLegend": false,
-          "axisScale": "startZero",
-          "sortBy": "label",
-          "sortDirection": "asc",
-          "dimension": "customer_state",
-          "slicerStyle": "dropdown",
-          "slicerMultiSelect": true
-        },
         {
           "id": "experience_review_mean",
           "type": "kpi",
           "title": "Average review",
           "layout": {
             "x": 0,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -810,7 +708,7 @@
           "metricMode": "field",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -821,7 +719,7 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "Order average · out of 5"
+          "labelOverride": "Order average \u00c2\u00b7 out of 5"
         },
         {
           "id": "experience_on_time",
@@ -829,7 +727,7 @@
           "title": "On-time delivery",
           "layout": {
             "x": 4,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -845,7 +743,7 @@
           "metricMode": "calculated",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -875,7 +773,7 @@
           "title": "Average delivery time",
           "layout": {
             "x": 8,
-            "y": 3,
+            "y": 0,
             "w": 4,
             "h": 4
           },
@@ -901,7 +799,7 @@
           "metricMode": "field",
           "colorMode": "single",
           "accentColor": "#26262A",
-          "secondaryColor": "#B17B38",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -912,15 +810,15 @@
           "valueSize": 42,
           "labelSize": 12,
           "labelOverrideMode": "custom",
-          "labelOverride": "Calendar days · delivered orders"
+          "labelOverride": "Calendar days \u00c2\u00b7 delivered orders"
         },
         {
           "id": "experience_monthly_review",
           "type": "line",
-          "title": "Review score by purchase month",
+          "title": "Review score by month",
           "layout": {
             "x": 0,
-            "y": 7,
+            "y": 4,
             "w": 6,
             "h": 8
           },
@@ -945,8 +843,8 @@
           "aggregation": "average",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#C1292E",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -957,7 +855,7 @@
           "sortField": "purchase_year_month",
           "lineSmooth": false,
           "lineWidth": 2,
-          "pointSize": 4,
+          "pointSize": 2,
           "dataZoom": true,
           "xAxisTitle": "Purchase month",
           "showGridLines": true,
@@ -966,10 +864,10 @@
         {
           "id": "experience_monthly_on_time",
           "type": "line",
-          "title": "On-time delivery by purchase month",
+          "title": "On-time delivery by month",
           "layout": {
             "x": 6,
-            "y": 7,
+            "y": 4,
             "w": 6,
             "h": 8
           },
@@ -994,8 +892,8 @@
           "aggregation": "sum",
           "metricMode": "calculated",
           "colorMode": "single",
-          "accentColor": "#C1292E",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#007F82",
+          "secondaryColor": "#BB7B19",
           "showLabels": false,
           "showLegend": false,
           "axisScale": "startZero",
@@ -1006,7 +904,7 @@
           "sortField": "purchase_year_month",
           "lineSmooth": false,
           "lineWidth": 2,
-          "pointSize": 4,
+          "pointSize": 2,
           "dataZoom": true,
           "xAxisTitle": "Purchase month",
           "showGridLines": true,
@@ -1029,7 +927,7 @@
           "title": "Review score bands",
           "layout": {
             "x": 0,
-            "y": 15,
+            "y": 12,
             "w": 6,
             "h": 8
           },
@@ -1054,8 +952,8 @@
           "aggregation": "sum",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#4169B1",
+          "secondaryColor": "#BB7B19",
           "showLabels": true,
           "showLegend": false,
           "axisScale": "startZero",
@@ -1076,7 +974,7 @@
           "title": "Delivery time distribution",
           "layout": {
             "x": 6,
-            "y": 15,
+            "y": 12,
             "w": 6,
             "h": 8
           },
@@ -1101,8 +999,8 @@
           "aggregation": "sum",
           "metricMode": "field",
           "colorMode": "single",
-          "accentColor": "#556B7D",
-          "secondaryColor": "#B17B38",
+          "accentColor": "#007F82",
+          "secondaryColor": "#BB7B19",
           "showLabels": true,
           "showLegend": false,
           "axisScale": "startZero",
@@ -1126,7 +1024,7 @@
           "body": "Delivery time uses calendar days. On-time delivery compares the delivery date with the promised date. Missing reviews and delivery dates are excluded from averages.",
           "layout": {
             "x": 0,
-            "y": 23,
+            "y": 20,
             "w": 12,
             "h": 2
           },
